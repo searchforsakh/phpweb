@@ -1,0 +1,3 @@
+"\n" newline hanya melakukan enter saat diterminal, bukan di web
+<br> br hanya melakukan enter saat di web, bukan diterminal
+
