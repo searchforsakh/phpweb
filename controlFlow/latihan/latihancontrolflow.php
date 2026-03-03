@@ -6,6 +6,7 @@
     <title>Control Flow</title>
   </head>
   <body>
+    <!-- for -->
     <table border="1" cellspacing="0" cellpadding="20">
       <?php  for ($a = 1; $a <= 3; $a++) : ?>
       <tr>
@@ -15,8 +16,21 @@
       </tr>
       <?php endfor ?>
     </table>
-
     <br>
+    <hr>
+    
+    <!-- while -->
+    <table border="1" cellspacing="0" cellpadding="20">
+      <?php $x=0; while($x<3) : $x++; ?>
+      <tr>
+        <?php $y=0; while($y<3) : $y++; ?>
+        <td><?php echo "$x-$y" ?></td>
+        <?php endwhile ?>
+      </tr>
+      <?php endwhile ?>
+    </table>
+    <br>
+    <hr>
 
     <!-- contoh tabel html -->
     <!-- tr untuk membuat baris -->
