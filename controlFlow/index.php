@@ -21,7 +21,23 @@ echo "<br>";
 // sama seperti while, tetapi do while akan menjalankan kode terlebih dahulu, baru akan melihat kondisinya
 $a = 1;
 do {
+    echo "\n";
     echo "Hi Sakha!<br>";
     $a++;
     } while($a <= 5);
+    echo "<br>";
+    
+    // pengkondisian/ percabangan
+    // if else, tenary, switch
+    
+$x = 50;
+if ($x < 50){
+    echo "\n";
+    echo "benar";
+} else if ($x == 50){
+    echo "\n";
+    echo "bingo";
+} else {
+    echo "Salah";
+}
 ?>

@@ -4,21 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Control Flow</title>
+    <style>
+      .tr{background-color: pink;}
+      .tr2{background-color: silver;}
+    </style>
   </head>
   <body>
     <!-- for -->
-    <table border="1" cellspacing="0" cellpadding="20">
-      <?php  for ($a = 1; $a <= 3; $a++) : ?>
-      <tr>
-        <?php for($b = 1; $b <= 3; $b++) : ?>
-        <td><?php echo "$a,$b" ?></td>
+  <table border="1" cellspacing="0" cellpadding="20">
+    <?php  for ($a = 1; $a <= 5; $a++) : ?>
+      <?php if ($a%2 == 0) : ?>
+        <tr class="tr">
+      <?php else : ?>
+        <tr class="tr2">
+      <?php endif; ?>
+        <?php for($b = 1; $b <= 6; $b++) : ?>
+          <td><?php echo "$a,$b" ?></td>
         <?php endfor ?>
       </tr>
-      <?php endfor ?>
-    </table>
+    <?php endfor ?>
+  </table>
     <br>
     <hr>
-    
+
     <!-- while -->
     <table border="1" cellspacing="0" cellpadding="20">
       <?php $x=0; while($x<3) : $x++; ?>
