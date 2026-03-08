@@ -8,22 +8,20 @@ $hari = ["senin", "selasa", "rabu"];
 $bulan = ["Januari", "februari", "maret"];
 
 // menampilkan array
-var_dump ($hari);
+var_dump($hari);
 echo "<br>";
-print_r ($bulan);
+print_r($bulan);
 
 // menampilkan salah satu elemen pada array, dengan cara memanggil indexnya
 echo "<br>";
-echo "hari ini adalah hari " , $hari[0];
+echo "hari ini adalah hari ", $hari[0];
 echo "<br>";
-echo "bulan ini adalah bulan " , $bulan[1];
+echo "bulan ini adalah bulan ", $bulan[1];
 
 // menambahkan elemen baru pada array
 $hari[] = "kamis";
 $bulan[] = "april";
 echo "<br>";
-print_r ($hari);echo "<br>";
-print_r ($bulan);
-
-
-?>
+print_r($hari);
+echo "<br>";
+print_r($bulan);

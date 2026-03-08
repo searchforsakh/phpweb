@@ -1,19 +1,19 @@
-<?php 
+<?php
 // pengulangan
 // for, while, do while, foreach(pengulangan khusus array)
 
 // for
-for($x = 0; $x < 5; $x++){ // (inisialisasi;kondisi;increment/decrement)
-    echo "Sakha Pratama","<br>", "\n"; // "\n" newline didalam web, hanya berperan sebagai spasi, bukan sebagai enter
+for ($x = 0; $x < 5; $x++) { // (inisialisasi;kondisi;increment/decrement)
+    echo "Sakha Pratama", "<br>", "\n"; // "\n" newline didalam web, hanya berperan sebagai spasi, bukan sebagai enter
     // web menampilkan enter jika sintaksnya br
-    }
+}
 echo "<br>";
 
 // while
 $x = 1;
-while($x <= 5){ // sama seperti for, namun hanya memerlukan kondisi saja
-echo "Sakha Pratama <br>";
-$x++;
+while ($x <= 5) { // sama seperti for, namun hanya memerlukan kondisi saja
+    echo "Sakha Pratama <br>";
+    $x++;
 }
 echo "<br>";
 
@@ -24,20 +24,19 @@ do {
     echo "\n";
     echo "Hi Sakha!<br>";
     $a++;
-    } while($a <= 5);
-    echo "<br>";
-    
-    // pengkondisian/ percabangan
-    // if else, tenary, switch
-    
+} while ($a <= 5);
+echo "<br>";
+
+// pengkondisian/ percabangan
+// if else, tenary, switch
+
 $x = 50;
-if ($x < 50){
+if ($x < 50) {
     echo "\n";
     echo "benar";
-} else if ($x == 50){
+} else if ($x == 50) {
     echo "\n";
     echo "bingo";
 } else {
     echo "Salah";
 }
-?>

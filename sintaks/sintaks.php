@@ -23,7 +23,7 @@ $b = 4;
 // aoperator ssignment
 // =, +=, -=, *=, /=, %=, .=
 $x = 20;
-$x =+ 10;
+$x = +10;
 echo $x;
 echo "\n";
 
@@ -37,8 +37,8 @@ echo "\n";
 // operator perbandingan
 // < > <= >= ==
 var_dump(10 == "10"); // akan true, karena == tidak mengecek tipe datanya, hanya mengecek nilainya 
-var_dump(10<9);
-var_dump(10>=9);
+var_dump(10 < 9);
+var_dump(10 >= 9);
 
 // operator identitas (disarankan menggunakan identitas jika ingin mengecek tipe data)
 // === !==
@@ -49,21 +49,24 @@ var_dump(10 === "10"); // akan false, karena === mengecek tipe datanya bukan nil
 // && = harus dua duanya benar
 // || = jika 1 benar, maka hasilnya benar
 $x = 10;
-var_dump($x < 20 || $x %2 == 0);
-var_dump($x < 9 && $x %2 == 0);
+var_dump($x < 20 || $x % 2 == 0);
+var_dump($x < 9 && $x % 2 == 0);
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latihan PHP</title>
 </head>
+
 <body>
     <h1>Selamat datang <?php print $nama ?></h1> <!-- php didalam html -->
-    <?php 
+    <?php
     echo "<p>ini adalah paragraph</p>";
-    echo "Hasil perkalian ". $a. " & ", $b, " Adalah ". $a*$b; ?> <!-- html didalam php -->
+    echo "Hasil perkalian " . $a . " & ", $b, " Adalah " . $a * $b; ?> <!-- html didalam php -->
 </body>
+
 </html>
