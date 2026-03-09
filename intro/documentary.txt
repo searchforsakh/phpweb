@@ -1,3 +1,6 @@
 "\n" newline hanya melakukan enter saat diterminal, bukan di web
 <br> br hanya melakukan enter saat di web, bukan diterminal
+gunakan ul/ol diluar for/foreach jika menginginkan list berurutan secara langsung (1,2,3,4)
+gunakan ul/ol didalam for/foreach jika menginginkan list berurutan secara terpisah
+metode request get adalah metode pengiriman data melalui url dan data tsb bisa ditangkap oleh variabel superglobal get
 
