@@ -1,3 +1,28 @@
+<?php
+// cek apakah tidak ada data di $_GET
+if (
+    // !isset($_GET["gambar"]) artinya: "Apakah data 'gambar' TIDAK ADA?"
+    // Simbol || (OR) artinya: "Atau".
+    // Logikanya: Jika (Gambar tidak ada) ATAU (Judul Film tidak ada) ATAU (Tahun Rilis tidak ada), dan seterusnya... maka kondisinya terpenuhi (dianggap bermasalah).
+
+    // Isi di dalam kurung kurawal { ... } HANYA akan jalan jika hasil akhir di dalam kurung if (...) bernilai TRUE (Benar).
+    // isset artinya: "Apakah ada?" (Hasilnya TRUE jika ada).
+    // !isset artinya: "Apakah TIDAK ada?" (Hasilnya TRUE jika datanya hilang).
+
+    // kondisi if ini mengharuskan user memasukkan semua data yang diperlukan (gambar, film, rilis, pemeran, rating) agar bisa melihat detail film. Jika salah satu data tidak ada, maka user akan diarahkan kembali ke halaman utama (superglobals.php) untuk memilih film lagi.
+    !isset($_GET["gambar"]) ||
+    !isset($_GET["film"]) ||
+    !isset($_GET["rilis"]) ||
+    !isset($_GET["pemeran"]) ||
+    !isset($_GET["rating"])
+) {
+    header("Location: superglobals.php"); // redirect ke halaman superglobals.php jika salah satu data tidak ada
+    exit; // exit - fungsi untuk menghentikan eksekusi script selanjutnya
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
