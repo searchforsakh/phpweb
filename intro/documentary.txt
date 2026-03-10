@@ -4,3 +4,15 @@ gunakan ul/ol diluar for/foreach jika menginginkan list berurutan secara langsun
 gunakan ul/ol didalam for/foreach jika menginginkan list berurutan secara terpisah
 metode request get adalah metode pengiriman data melalui url dan data tsb bisa ditangkap oleh variabel superglobal get
 
+GET POST
+
+GET mengirimkan data melalui url
+POST mengirimkan data melalui form
+
+form bisa menggunakan get dan post
+url hanya bisa menggunakan get 
+
+kelebihan menggunakan form(POST), datanya tidak terlihat di URL. cocok untuk membuat login page
+
+
+
