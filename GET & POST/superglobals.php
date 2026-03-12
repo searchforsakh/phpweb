@@ -44,6 +44,7 @@ $biodatas = [
     <ol>
         <?php foreach ($biodatas as $biodata) : ?>
             <li>
+                <!-- mengirim semua variabel yang nantinya akan ditangkap oleh variabel $_GET di dalam file latihanget.php -->
                 <a href="latihanget.php?film=<?php echo $biodata["film"] ?>&rilis=<?php echo $biodata["rilis"] ?>&pemeran=<?php echo $biodata["pemeran"] ?>&rating=<?php echo $biodata["rating"] ?>&gambar=<?php echo $biodata["gambar"] ?>">Nama Film = <?php echo $biodata["film"] ?></a>
             </li>
         <?php endforeach ?>
