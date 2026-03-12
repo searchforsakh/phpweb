@@ -4,7 +4,7 @@ require 'functions.php';
 
 // Menjalankan fungsi querry untuk mengambil data dari tabel 'film'
 // Hasilnya disimpan ke dalam variabel $film (berupa array)
-$film = querry("SELECT * FROM film");
+$film = querry();
 
 ?>
 <!DOCTYPE html>

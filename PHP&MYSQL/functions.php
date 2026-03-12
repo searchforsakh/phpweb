@@ -4,13 +4,13 @@
 $db = mysqli_connect("localhost", "root", "", "phpweb");
 
 // Membuat fungsi bernama 'querry' untuk mempermudah pengambilan data
-function querry($querry)
+function querry()
 {
     // Mengambil variabel $db dari luar agar bisa digunakan di dalam fungsi ini
     global $db;
 
     // Menjalankan perintah SQL (SELECT) ke database
-    $result = mysqli_query($db, $querry);
+    $result = mysqli_query($db, "SELECT * FROM film");
 
     // Menyiapkan wadah kosong (array) untuk menampung data-data dari database
     $rows = [];
