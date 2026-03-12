@@ -15,4 +15,19 @@ url hanya bisa menggunakan get
 kelebihan menggunakan form(POST), datanya tidak terlihat di URL. cocok untuk membuat login page
 
 
+ISTILAH DATABASE
+field/column = kolom
+row = baris / record
+key
+-primary key = key unik yang membedakan data
+-foreign key
+auto increment = fitur untuk menambah nilai satu persatu disetiap baris / record yang masuk
+relationship = hubungan antar tabel
+normalization = proses untuk membuat tabel dalam database berjalan normal
 
+MENGHUBUNGKAN MYSQL DENGAN PHP
+- MYSQLi = 
+- PDO (PHP DATA OBJECT)
+
+php bisa mencetak variabel
+php tidak bisa mencetak array yang tidak diberikan indeksnya
