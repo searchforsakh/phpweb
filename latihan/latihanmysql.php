@@ -1,3 +1,8 @@
+<?php
+require 'function.php';
+$name = querry();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
