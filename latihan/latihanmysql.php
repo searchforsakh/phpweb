@@ -25,5 +25,4 @@ $name = querry();
         </tr>
     </table>
 </body>
-
 </html>
